@@ -1,0 +1,2 @@
+# ISIL-EMP-SQL-SERVER-01
+Taller de SQL Server para SCOTIABANK

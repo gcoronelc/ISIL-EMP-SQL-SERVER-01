@@ -1,0 +1,5 @@
+select 
+month(pag_fecha) as Mes,
+sum(pag_importe)as Ingresos
+from EDUCA.dbo.PAGO
+group by cube (month(pag_fecha))

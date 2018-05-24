@@ -1,0 +1,14 @@
+SELECT * FROM dbo.ALUMNO
+
+SELECT * FROM dbo.CURSO
+
+
+
+SELECT A.alu_nombre, M.mat_nota,
+CASE	WHEN M.mat_nota <= 10 THEN 'MALO'
+		WHEN M.mat_nota <=14  THEN 'REGULAR'
+		WHEN M.mat_nota <=18  THEN 'BUENO'
+		ELSE 'EXCELENTE' END AS CALIFICACION
+FROM dbo.MATRICULA M
+INNER JOIN dbo.ALUMNO A
+ON M.alu_id=A.alu_id

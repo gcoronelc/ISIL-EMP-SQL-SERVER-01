@@ -1,9 +1,9 @@
 
 create table dbo.Ejemplos(
-CodPersona smallint identity(1,1) primary key,
-Persona nvarchar(35),
-Mes nvarchar(10),
-Monto decimal(5,2)
+	CodPersona smallint identity(1,1) primary key,
+	Persona nvarchar(35),
+	Mes nvarchar(10),
+	Monto decimal(5,2)
 )
 go
 
@@ -21,7 +21,8 @@ go
 select * from dbo.Ejemplos
 go
 
-SELECT Persona,  
+SELECT 
+	Persona,  
 	isnull([Enero],0)[Enero],
 	isnull([Febrero],0)[Febrero],
 	isnull([Marzo],0)[Marzo],

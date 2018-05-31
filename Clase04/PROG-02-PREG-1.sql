@@ -16,7 +16,6 @@ DECLARE
 	@ErrMsg varchar(1000),
 	@ErrSeverity int;
 	
-
 BEGIN TRY
 
   BEGIN TRAN;
